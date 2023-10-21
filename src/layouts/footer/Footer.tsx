@@ -6,7 +6,7 @@ import './Footer.scss';
 
 const Footer = () => {
     return (
-        <Container id="footer-section" className="section">
+        <Container id="footer-section">
             <Row>Footer</Row>
         </Container>
     );

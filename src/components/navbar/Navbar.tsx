@@ -12,8 +12,22 @@ import BootstrapNavbar from 'react-bootstrap/esm/Navbar';
 import './Navbar.scss';
 
 const Navbar = () => {
+    const handleClick = (sectionId: string) => {
+        const targetSection = document.getElementById(sectionId);
+        if (targetSection) {
+            const offset = 60; // Adjust this value to control the scroll offset
+            const targetPosition = targetSection.offsetTop - offset;
+
+            window.scrollTo({
+                top: targetPosition,
+                behavior: 'smooth',
+            });
+        }
+    };
+
     return (
         <BootstrapNavbar
+            id="navbar"
             bg="dark"
             data-bs-theme="dark"
             fixed="top"
@@ -21,7 +35,9 @@ const Navbar = () => {
             className="bg-body-tertiary"
         >
             <Container fluid>
-                <BootstrapNavbar.Brand>Podcode</BootstrapNavbar.Brand>
+                <BootstrapNavbar.Brand id="brand">
+                    Podcode
+                </BootstrapNavbar.Brand>
                 <BootstrapNavbar.Toggle aria-controls="navbar-scroll" />
                 <BootstrapNavbar.Collapse id="navbar-scroll">
                     <Nav
@@ -29,11 +45,25 @@ const Navbar = () => {
                         style={{ maxHeight: '100px' }}
                         navbarScroll
                     >
-                        <Nav.Link href="#home-section">Home</Nav.Link>
-                        <Nav.Link href="#partner-section">Partners</Nav.Link>
-                        <Nav.Link href="#category-section">Categories</Nav.Link>
-                        <Nav.Link href="#faq-section">FAQs</Nav.Link>
-                        <Nav.Link href="#announcement-section">
+                        <Nav.Link onClick={() => handleClick('home-section')}>
+                            Home
+                        </Nav.Link>
+                        <Nav.Link
+                            onClick={() => handleClick('partner-section')}
+                        >
+                            Partners
+                        </Nav.Link>
+                        <Nav.Link
+                            onClick={() => handleClick('category-section')}
+                        >
+                            Categories
+                        </Nav.Link>
+                        <Nav.Link onClick={() => handleClick('faq-section')}>
+                            FAQs
+                        </Nav.Link>
+                        <Nav.Link
+                            onClick={() => handleClick('announcement-section')}
+                        >
                             Announcements
                         </Nav.Link>
                     </Nav>

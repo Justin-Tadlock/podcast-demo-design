@@ -1,5 +1,6 @@
 :root {
-    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-family: 'Sometype Mono', Inter, system-ui, Avenir, Helvetica, Arial,
+        sans-serif;
     line-height: 1.5;
     font-weight: 400;
 
@@ -25,7 +26,7 @@ a:hover {
 
 body {
     margin: 0;
-    padding: 0;
+    padding: 60px 0 0 0;
     display: flex;
     place-items: center;
     min-width: 320px;
@@ -54,10 +55,6 @@ button:hover {
 button:focus,
 button:focus-visible {
     outline: 4px auto -webkit-focus-ring-color;
-}
-
-.section {
-    padding-top: 60px;
 }
 
 @media (prefers-color-scheme: light) {

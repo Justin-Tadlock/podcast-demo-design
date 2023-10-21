@@ -5,7 +5,7 @@ import './Partners.scss';
 
 const Partners = () => {
     return (
-        <Container fluid id="partner-section" className="section">
+        <Container fluid id="partner-section">
             <p>Thank you message for partners.</p>
             <div id="partners-container"></div>
         </Container>

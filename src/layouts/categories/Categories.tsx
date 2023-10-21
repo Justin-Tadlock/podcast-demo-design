@@ -36,7 +36,7 @@ const Categories = () => {
     ];
 
     return (
-        <Container id="category-section" className="section">
+        <Container id="category-section">
             <Row>
                 <SectionHeader />
                 <Container fluid>
