@@ -2,5 +2,48 @@
     display: flex;
     flex-direction: column-reverse;
 
-    min-height: 90vh;
+    min-height: 95vh;
+
+    background: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0) 50%,
+            rgba(0, 0, 0, 1) 80%
+        ),
+        url('../../assets/pexels-home-background.jpg') center/cover no-repeat;
+    background-position: top;
+
+    #home-content {
+        margin-left: 2em;
+        margin-bottom: 10vh;
+        max-width: 80%;
+
+        #author {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 22px;
+
+            text-transform: uppercase;
+        }
+
+        #header {
+            margin-bottom: 8px;
+
+            font-size: 22px;
+            font-style: italic;
+        }
+
+        #description {
+            margin-top: 12px;
+            margin-bottom: 12px;
+
+            font-size: 12px;
+
+            p {
+                padding: 0;
+            }
+        }
+
+        button {
+            font-weight: bold;
+        }
+    }
 }

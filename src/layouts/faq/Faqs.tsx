@@ -8,7 +8,7 @@ import Accordion from 'react-bootstrap/esm/Accordion';
 
 const Faqs = () => {
     return (
-        <Container id="faq-section" className="section">
+        <Container id="faq-section">
             <Row>
                 <SectionHeader />
                 <Accordion flush>

@@ -19,7 +19,7 @@ const Announcements = () => {
     };
 
     return (
-        <Container id="announcement-section" className="section">
+        <Container id="announcement-section">
             <Row>
                 <Announcement {...announcement} />
             </Row>
