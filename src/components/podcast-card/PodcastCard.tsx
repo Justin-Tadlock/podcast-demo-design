@@ -18,13 +18,13 @@ const PodcastCard = ({
     description,
 }: PodcastCardProps) => {
     return (
-        <Container id="podcast-card">
-            <Row id="img">
+        <div className="podcast-card">
+            <Row className="pcc-img">
                 <img src={imgSrc} alt={imgAltTxt} />
             </Row>
-            <Row id="title">{title}</Row>
-            <Row id="description">{description}</Row>
-        </Container>
+            <Row className="pcc-title">{title}</Row>
+            <Row className="pcc-description">{description}</Row>
+        </div>
     );
 };
 

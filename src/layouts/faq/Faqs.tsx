@@ -1,10 +1,11 @@
 import React from 'react';
-
-import './Faqs.scss';
 import Container from 'react-bootstrap/esm/Container';
 import Row from 'react-bootstrap/esm/Row';
-import SectionHeader from '../../components/section-header/SectionHeader';
 import Accordion from 'react-bootstrap/esm/Accordion';
+
+import SectionHeader from '../../components/section-header/SectionHeader';
+
+import './Faqs.scss';
 
 const Faqs = () => {
     return (

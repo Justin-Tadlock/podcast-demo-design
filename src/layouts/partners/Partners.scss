@@ -1,3 +1,31 @@
 #partner-section {
+    display: flex;
+    align-items: center;
     min-height: 100vh;
+
+    padding-left: 2em;
+
+    #thank-you {
+        margin-bottom: 2em;
+        font-weight: 100;
+        font-size: 12px;
+        .podcode {
+            font-family: 'Courier New', Courier, monospace;
+            text-transform: uppercase;
+        }
+    }
+
+    #partners {
+    }
+
+    .contact {
+        margin-top: 4em;
+        font-size: 10px;
+        p {
+            margin: 0;
+        }
+        a {
+            display: inline;
+        }
+    }
 }

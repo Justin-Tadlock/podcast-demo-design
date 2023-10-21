@@ -22,12 +22,8 @@ const Home = () => {
                     </p>
                 </Row>
                 <Row>
-                    <Col xs={2}>
-                        <Button variant="light">Sign Up</Button>
-                    </Col>
-                    <Col xs={2}>
-                        <Button variant="outline-light">Log in</Button>
-                    </Col>
+                    <Button variant="light">Sign Up</Button>
+                    <Button variant="outline-light">Log in</Button>
                 </Row>
             </Container>
         </Container>

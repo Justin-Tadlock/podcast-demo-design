@@ -1,10 +1,10 @@
-#podcast-card {
-    margin: 2px;
-    max-width: 180px;
+.podcast-card {
+    margin: 1em;
+    width: 180px !important;
     text-overflow: wrap;
     text-align: start;
 
-    #img {
+    .pcc-img {
         height: 200px;
         img {
             max-width: 180px;
@@ -12,11 +12,11 @@
         }
     }
 
-    #title {
+    .pcc-title {
         font-size: 14px;
     }
 
-    #description {
+    .pcc-description {
         font-size: 12px;
     }
 }
