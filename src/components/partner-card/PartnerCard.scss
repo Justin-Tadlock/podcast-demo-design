@@ -1,0 +1,19 @@
+.partner-card {
+    margin: 2em;
+    width: 200px !important;
+    height: 100px;
+    text-overflow: wrap;
+    text-align: start;
+
+    .pc-img {
+        img {
+            max-width: 200px;
+            max-height: 75px;
+            padding: 0;
+        }
+    }
+
+    .pc-name {
+        font-size: 14px;
+    }
+}
