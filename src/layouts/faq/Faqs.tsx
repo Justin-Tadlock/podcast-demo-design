@@ -11,7 +11,10 @@ const Faqs = () => {
     return (
         <Container id="faq-section">
             <Row>
-                <SectionHeader />
+                <SectionHeader
+                    title="Frequently Asked Questions"
+                    message="Find the answers to the commonly asked questions about the podcasts here!"
+                />
                 <Accordion flush>
                     <Accordion.Item eventKey="0">
                         <Accordion.Header>Accordion Item #1</Accordion.Header>
