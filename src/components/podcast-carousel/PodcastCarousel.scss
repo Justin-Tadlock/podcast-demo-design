@@ -1,0 +1,13 @@
+.podcast-container {
+    margin: 0;
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 4rem;
+    }
+    .carousel-inner {
+        margin-left: 4rem;
+        margin-right: 4rem;
+        height: 400px;
+    }
+}

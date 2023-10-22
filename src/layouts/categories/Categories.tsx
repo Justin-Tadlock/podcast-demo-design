@@ -3,66 +3,28 @@ import Container from 'react-bootstrap/esm/Container';
 import Row from 'react-bootstrap/esm/Row';
 
 import SectionHeader from '../../components/section-header/SectionHeader';
-import PodcastCard, {
-    PodcastCardProps,
-} from '../../components/podcast-card/PodcastCard';
-
-import img from '../../assets/pexels-placeholder.jpg';
+import PodcastCarousel from '../../components/podcast-carousel/PodcastCarousel';
+import { popularPodcasts, topPodcasts } from '../../data';
 
 import './Categories.scss';
 
 const Categories = () => {
-    let popularPodcasts: Array<PodcastCardProps> = [
-        {
-            imgSrc: img,
-            imgAltTxt: 'test',
-            title: 'Test Popular Title',
-            description: 'Test popular description',
-        },
-        {
-            imgSrc: img,
-            imgAltTxt: 'test2',
-            title: 'Test Popular Title2',
-            description: 'Test popular description2',
-        },
-    ];
-    let topPodcasts: Array<PodcastCardProps> = [
-        {
-            imgSrc: img,
-            imgAltTxt: 'test',
-            title: 'Test Top Title',
-            description: 'Test top description',
-        },
-    ];
-
     return (
         <Container id="category-section">
             <Row>
-                <SectionHeader />
-                <Container fluid>
-                    <Row>
-                        {popularPodcasts.map((podcast, idx) => (
-                            <PodcastCard
-                                {...podcast}
-                                key={`${podcast.title}-${idx}`}
-                            />
-                        ))}
-                    </Row>
-                </Container>
+                <SectionHeader
+                    title="List of Popular Podcasts"
+                    message="Here's a list of popular podcasts that you don't want to miss!"
+                />
+                <PodcastCarousel podcasts={popularPodcasts} numberSlides={4} />
             </Row>
 
             <Row>
-                <SectionHeader />
-                <Container fluid>
-                    <Row>
-                        {topPodcasts.map((podcast, idx) => (
-                            <PodcastCard
-                                {...podcast}
-                                key={`${podcast.title}-${idx}`}
-                            />
-                        ))}
-                    </Row>
-                </Container>
+                <SectionHeader
+                    title="Top Podcasts"
+                    message="Here's a list of the podcasts offering the top information around"
+                />
+                <PodcastCarousel podcasts={topPodcasts} numberSlides={4} />
             </Row>
         </Container>
     );
